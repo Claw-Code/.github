@@ -1,160 +1,92 @@
-# CLAW Code
+# 🐾 CLAW Code
 
-**CLAW Code** is an AI-powered, developer-first platform focused on accelerating 2D game development using modern web technologies. Inspired by the capabilities of v0, CLAW Code is built specifically for game creators, educators, and developers who want to generate, preview, and deploy 2D games with minimal friction.
+**CLAW Code** is an AI-native, developer-first platform designed to supercharge 2D and 3D game development with **Unity** as the primary engine, **Gwen** as the customizable in-game UI toolkit, and **Groq**-powered large language models for real-time code generation and backend logic support.
 
-This platform provides framework-specific reasoning, LLM-assisted generation, and instant live coding features — optimized for the **Phaser.js** game engine.
-
----
-
-## Overview
-
-CLAW Code allows developers to go from idea to working 2D game in seconds. By combining generative AI models with a game-oriented code stack, it automates common game development tasks, scaffolds game structure, and handles deployment — enabling rapid iteration and experimentation.
-
-Key features include:
-
-* AI-driven code generation optimized for **Phaser.js**
-* On-the-fly **live code preview** in the browser
-* One-click deploy to **static hosts** (e.g., GitHub Pages, Vercel)
-* Modular architecture to extend for other game engines in the future
-* Code-first workflow with optional visual tools (optional UI builder layer)
+CLAW empowers game developers to generate, preview, and iterate on gameplay mechanics, UI flows, and backend logic — all with natural language prompts and live coding assistance.
 
 ---
 
-## Use Cases
+## 🧭 Overview
 
-* Rapid prototyping for indie game developers
-* AI-assisted game jams
-* Game dev education, curriculum design, and workshops
-* Internal tools and sandbox environments for game logic testing
-* Interactive portfolio pieces and code-driven demos
+CLAW Code accelerates end-to-end game development by combining a high-performance LLM backend with Unity’s ecosystem and a lightweight in-game UI layer (Gwen). It automates code scaffolding, runtime previews, and deployment workflows for both 2D and 3D games.
+
+**Key Features:**
+
+- AI-powered generation for Unity C# scripts (2D + 3D)
+- UI scaffolding with Gwen (Unity-compatible)
+- Live preview and code injection inside Unity Editor (via socket bridge)
+- Real-time backend simulation using **Groq LLMs**
+- Optional multiplayer logic scaffolds
 
 ---
 
-## Architecture
+## 🎮 Use Cases
 
-CLAW Code is composed of the following layers:
+- Rapid prototyping of Unity scenes, behaviors, and UI
+- LLM-assisted game jam tools
+- Education platforms for teaching Unity with AI support
+- Real-time logic generation for NPCs, enemy AI, or quest systems
+- Backend scripting for save/load systems or event triggers
 
-1. **Frontend**
+---
 
-   * Code editor (Monaco/CodeMirror)
-   * Live preview panel (Phaser.js runtime with sandboxing)
-   * Prompt interface for natural language to code conversion
+## ⚙️ Architecture
 
-2. **LLM Core**
+CLAW Code includes the following components:
 
-   * Fine-tuned model (QLoRA/Mistral variant) for game-specific code generation
-   * Integrated prompt templates and contextual parsing
+1. **Unity Frontend**
+   - Scene loader and runtime injector
+   - Gwen-based in-game UI module
+   - Editor bridge (WebSocket or local pipe)
 
-3. **Build & Deploy System**
+2. **LLM Backend**
+   - Hosted on **Groq LPU** or **vLLM**
+   - Specialized prompt templates for Unity (2D/3D workflows)
+   - Actionable game-specific code suggestions (C#)
 
-   * Real-time transpilation using Vite/ESBuild
-   * One-click deploy targets (GitHub Pages, Netlify, Vercel)
-   * Optional export as ZIP or GitHub repo
+3. **Runtime Orchestrator**
+   - Code hot-reloader inside Unity
+   - Socket-based trigger system to evaluate code in live game sessions
+   - Export system to package builds (WebGL, Android, etc.)
 
 4. **Plugin Layer (WIP)**
-
-   * Asset manager (sprites, tilesets)
-   * Code actions (e.g., "Add Jump", "Add Enemy AI")
-   * Visual scripting (for non-coders)
-
----
-
-## Example Prompt → Output
-
-**Prompt:**
-"Create a 2D platformer with a jumping character, three platforms, and left-right controls using Phaser."
-
-**Generated Code (snippet):**
-
-```js
-this.player = this.physics.add.sprite(100, 450, 'dude');
-this.cursors = this.input.keyboard.createCursorKeys();
-
-update() {
-  if (this.cursors.left.isDown) {
-    this.player.setVelocityX(-160);
-  } else if (this.cursors.right.isDown) {
-    this.player.setVelocityX(160);
-  } else {
-    this.player.setVelocityX(0);
-  }
-
-  if (this.cursors.up.isDown && this.player.body.touching.down) {
-    this.player.setVelocityY(-330);
-  }
-}
-```
-
-**Output:**
-The game instantly renders in the preview window with live updates.
+   - Multiplayer scaffold (Mirror/Netcode for GameObjects)
+   - Enemy/AI pattern generator
+   - Procedural level scripting
 
 ---
 
-## One-Click Deploy
+## 🖼️ Screenshots
 
-Once a game is generated and tested in the live preview:
+### 🔧 Claw UI Prompt Panel
+![Prompt UI](assets/screenshot-ui.png)
 
-* Click "Deploy"
-* Choose a target: GitHub Pages / Vercel / ZIP download
-* The project is packaged, built with Vite, and hosted instantly
+### 🎮 Unity Scene with Injected Gameplay
+![Unity Game Preview](assets/screenshot-unity.png)
+
+### 🧠 LLM Service Backend Interface
+![LLM Output](assets/screenshot-llm.png)
+
+> (Replace these screenshots with your actual UI/images in the `assets/` folder or GitHub URLs)
 
 ---
 
-## Getting Started
+## 🚀 One-Click Deploy
 
-### 1. Clone the Starter
+Once gameplay and logic are finalized:
+
+- Click **Deploy**
+- Choose target: WebGL, Windows, Android
+- The game is bundled, exported, and optionally hosted (e.g., itch.io, S3)
+
+---
+
+## 🧰 Getting Started
+
+### 1. Clone the Setup Repo
 
 ```bash
-git clone https://github.com/Claw-Code/claw-starter
-cd claw-starter
-npm install
-npm run dev
-```
-
-### 2. Use the Prompt Interface
-
-```bash
-npm run claw
-```
-
-Follow CLI instructions or open the in-browser editor.
-
----
-
-## Model and Infrastructure
-
-CLAW Code currently integrates with a fine-tuned LLM (Mistral or Code Llama variants) hosted using:
-
-* Ollama for local testing
-* vLLM for production inference
-* Optional: RAG (Retrieval-Augmented Generation) with GitHub repo integration
-
-Inference layer is modular and OpenAI-compatible.
-
----
-
-## Roadmap
-
-* Plugin support for additional engines (Godot, Kaboom.js)
-* Multi-scene game generation
-* Visual editor integration
-* Multiplayer scaffolds and socket support
-* Export to native via Capacitor / Electron (optional)
-
----
-
-## License
-
-CLAW Code is licensed under the MIT License.
-
----
-
-## Contributions
-
-We welcome contributors building on top of CLAW’s open infrastructure. Whether you want to improve the prompt system, extend the code generation pipeline, or add support for new engines — feel free to open issues and pull requests.
-
----
-
-## Maintainers
-
-Built and maintained by the [CLAW Code](https://github.com/Claw-Code) community — a collective of developers passionate about the future of AI-assisted game creation.
+git clone https://github.com/Claw-Code/Claw-DevEnv
+cd Claw-DevEnv
+chmod +x setup-claw.sh
+./setup-claw.sh
