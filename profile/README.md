@@ -61,13 +61,11 @@ CLAW Code includes the following components:
 ### 🔧 Claw UI Prompt Panel
 ![Prompt UI](assets/screenshot-ui.png)
 
-### 🎮 Unity Scene with Injected Gameplay
+### 🎮 Unity Code with Injected Gameplay
 ![Unity Game Preview](assets/screenshot-unity.png)
 
-### 🧠 LLM Service Backend Interface
+### 🧠 LLM Service in Stream Data
 ![LLM Output](assets/screenshot-llm.png)
-
-> (Replace these screenshots with your actual UI/images in the `assets/` folder or GitHub URLs)
 
 ---
 
