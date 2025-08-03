@@ -88,3 +88,47 @@ git clone https://github.com/Claw-Code/Claw-DevEnv
 cd Claw-DevEnv
 chmod +x setup-claw.sh
 ./setup-claw.sh
+
+
+```
+# Collaborations
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/dosa15">
+        <img src="https://github.com/dosa15.png" width="80px" alt="dosa15"/><br />
+        <sub><b>@dosa15</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/kwatraa">
+        <img src="https://github.com/kwatraa.png" width="80px" alt="kwatraa"/><br />
+        <sub><b>@kwatraa</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/rutujashingate">
+        <img src="https://github.com/rutujashingate.png" width="80px" alt="rutujashingate"/><br />
+        <sub><b>@rutujashingate</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/SaibalajiN">
+        <img src="https://github.com/SaibalajiN.png" width="80px" alt="SaibalajiN"/><br />
+        <sub><b>@SaibalajiN</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/SSGill71">
+        <img src="https://github.com/SSGill71.png" width="80px" alt="SSGill71"/><br />
+        <sub><b>@SSGill71</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Itaxh1">
+        <img src="https://github.com/Itaxh1.png" width="80px" alt="Itaxh1"/><br />
+        <sub><b>@Itaxh1</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
