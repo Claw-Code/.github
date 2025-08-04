@@ -101,12 +101,6 @@ chmod +x setup-claw.sh
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/kwatraa">
-        <img src="https://github.com/kwatraa.png" width="80px" alt="kwatraa"/><br />
-        <sub><b>@kwatraa</b></sub>
-      </a>
-    </td>
-    <td align="center">
       <a href="https://github.com/rutujashingate">
         <img src="https://github.com/rutujashingate.png" width="80px" alt="rutujashingate"/><br />
         <sub><b>@rutujashingate</b></sub>
@@ -118,10 +112,22 @@ chmod +x setup-claw.sh
         <sub><b>@SaibalajiN</b></sub>
       </a>
     </td>
+      <td align="center">
+      <a href="https://github.com/sanjaykapilesh">
+        <img src="https://github.com/sanjaykapilesh.png" width="80px" alt="SaibalajiN"/><br />
+        <sub><b>@Sanjaykapilesh</b></sub>
+      </a>
+    </td>
     <td align="center">
       <a href="https://github.com/SSGill71">
         <img src="https://github.com/SSGill71.png" width="80px" alt="SSGill71"/><br />
         <sub><b>@SSGill71</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/kwatraa">
+        <img src="https://github.com/kwatraa.png" width="80px" alt="kwatraa"/><br />
+        <sub><b>@kwatraa</b></sub>
       </a>
     </td>
     <td align="center">
