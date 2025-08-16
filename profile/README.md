@@ -4,7 +4,7 @@
 
 CLAW empowers game developers to generate, preview, and iterate on gameplay mechanics, UI flows, and backend logic — all with natural language prompts and live coding assistance.
 
-![LLM Output](assets/screenshot-llm.png)
+![LLM Output](assets/claw_promo.gif)
 
 ## 🧭 Overview
 
