@@ -1,4 +1,8 @@
 # 🐾 CLAW Code
+[![Try CLAW Code](https://img.shields.io/badge/Try-CLAW%20Code-blue?style=for-the-badge&logo=unity&logoColor=white)](https://claw.codes/)
+ 
+
+**CLAW Code** is an AI-native, developer-first platform designed to supercharge 2D and 3D game development with **Unity** as the primary engine, **Gwen** as the customizable in-game UI toolkit, and **Groq**-powered large language models for real-time code generation and backend logic support.
 
 **CLAW Code** is an AI-native, developer-first platform designed to supercharge 2D and 3D game development with **Unity** as the primary engine, **Gwen** as the customizable in-game UI toolkit, and **Groq**-powered large language models for real-time code generation and backend logic support.
 
